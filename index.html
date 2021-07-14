@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	
+
+
+
+<script>
+    
+    var surname=prompt('Введите вашу фамилию');
+    var name=prompt('Введите ваше имя');
+    var name2=prompt('Введите ваше отчество');
+    
+    var fio = ' Ваше ФИО: ' + surname + ' ' + name + ' ' + name2; 
+    
+    var vozr1=prompt('Введите ваш  возраст');
+    var vozr = parseInt(vozr1);
+ 
+    
+    var vozr_years = ('Ваш возраст в годах: ' + vozr);
+    var vozr_days = ('Ваш возраст в днях: ' + vozr*365);
+    var vozr_frm_years = ('Через 5 лет вам будет: ' + (vozr+5))    ;
+    
+    
+    
+    
+    
+    var pol=confirm('Ваш пол мужской?');
+    
+    
+//    rez='Ваша фамилия ' + surname + '\n' +'Ваше имя ' + name;
+
+    
+
+        if (pol == true)
+            pol_display = ('Ваш пол:  мужской')
+        else
+            pol_display = ('Ваш пол:  женский');
+    
+    
+var pension;
+    
+if (pol == true){
+    if (vozr>=62)
+        pension =('да')
+    else
+        pension =('нет');
+}
+else {
+
+    if (vozr>=57)
+        pension =('да')
+    else
+        pension =('нет');
+        
+}
+                
+    pension_display=('Вы на пенсии: ' + pension);
+    
+    
+    
+    
+  alert(fio+ '\n' + vozr_years  + '\n' + vozr_days  + '\n' +  vozr_frm_years   + '\n' +   pol_display  + '\n' +  pension_display);
+    
+    
+    
+    
+    
+    
+    
+</script>
+
+
+
+
+
+
+</body>
+</html>
